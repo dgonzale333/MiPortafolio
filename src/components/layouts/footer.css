@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+
+footer {
+    width: 100%;
+    min-height: 100px; /* Evita que el contenido sobresalga */
+    background-color: rgb(29, 29, 29);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px; /* Agrega un poco de padding para que el contenido no quede pegado */
+}

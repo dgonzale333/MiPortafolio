@@ -14,7 +14,6 @@ export const Li = () => {
     </div>
       <ul className='ul-nav'>
       <li><a href="" className='li-a'>Inicio</a></li>
-      <li><a href="" className='li-a'>Sobre mi</a></li>
       <li><a href="" className='li-a'>Proyectos</a></li>
       <li><a href="" className='li-a'>Contacto</a></li>
       </ul>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
+body {
+    background: linear-gradient(to right, var(--primary-bg), var(--secondary-bg));
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif; /* Aplicar la fuente */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .img-fullscreen {
+    width: 99vw; /* Hace que la imagen se agrande un poco */
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    filter: blur(5px);
+  }
+
+  /* Estilos para centrar contenido */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Texto principal */
+  p {
+    font-size: 4rem; /* Tamaño grande */
+    font-weight: bold;
+    margin: 4px 0;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto hasta que se escriba */
+    border-right: 3px solid transparent; /* Efecto de cursor */
+  }
+  
+  /* Nombre */
+  p:first-of-type {
+    color: #ffffff; /* Color de nombre */
+    animation: typing 2s steps(15) forwards , blinkCursor 0.5s ;
+  }
+  
+  /* Profesión */
+  p:last-of-type {
+    color: #ffffff; /* Color del título */
+    animation: typing 2s steps(25) forwards 2s, blinkCursor 0.5s ;
+  }
+  
+  /* Animación de escritura */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 51%;
+    }
+  }
+  
+  /* Efecto del cursor */
+  @keyframes blinkCursor {
+    50% {
+      border-right-color: #ffffff;
+    }
+  }
+  
+  .bt-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.bt-home1{
+    width: 10rem; /* Tamaño ajustado para mejor visibilidad */
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 17px; /* Bordes redondeados para un look moderno */
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-color: white ;
+    transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Efecto hover */
+.bt-home1:hover {
+    transform: scale(1.1); /* Aumenta ligeramente al pasar el cursor */
+}
+
+/* Efecto al hacer clic */
+.bt-home1:active {
+    transform: scale(0.95); /* Reduce ligeramente al hacer clic */
+}
+
+.bt-home2{
+    width: 10rem; /* Tamaño ajustado para mejor visibilidad */
+    height: 3rem;
+   /* Reducido para mejor proporción */
+    cursor: pointer;
+    border-radius: 17px; /* Bordes redondeados para un look moderno */
+    background-color: #2825f4;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+   border: none;
+    transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Efecto hover */
+.bt-home2:hover {
+    transform: scale(1.1); /* Aumenta ligeramente al pasar el cursor */
+}
+
+/* Efecto al hacer clic */
+.bt-home2:active {
+    transform: scale(0.95); /* Reduce ligeramente al hacer clic */
+}
