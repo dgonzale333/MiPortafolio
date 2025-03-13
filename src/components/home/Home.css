@@ -33,7 +33,7 @@ main {
   }
   
   /* Texto principal */
-  p {
+  .txt-main {
     font-size: 4rem; /* Tamaño grande */
     font-weight: bold;
     margin: 4px 0;
@@ -43,13 +43,13 @@ main {
   }
   
   /* Nombre */
-  p:first-of-type {
+  .txt-main:first-of-type {
     color: #ffffff; /* Color de nombre */
     animation: typing 2s steps(15) forwards , blinkCursor 0.5s ;
   }
   
   /* Profesión */
-  p:last-of-type {
+  .txt-main:last-of-type {
     color: #ffffff; /* Color del título */
     animation: typing 2s steps(25) forwards 2s, blinkCursor 0.5s ;
   }
@@ -125,4 +125,56 @@ main {
 /* Efecto al hacer clic */
 .bt-home2:active {
     transform: scale(0.95); /* Reduce ligeramente al hacer clic */
+}
+
+section {
+  width: 100%; /* Ajusta el ancho */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 4rem;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  gap: 10rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.info-section1{
+  display: flex;
+  flex-direction: column;
+ margin: 2rem;
+}
+
+section img {
+  width: 350px; /* Ajusta el tamaño de la imagen */
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%; /* Hace la imagen circular */
+  margin-bottom: 15px;
+}
+
+section h2 {
+  margin-top: -10rem;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+section p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+Header.scrolled{
+  background-color: white;
 }
