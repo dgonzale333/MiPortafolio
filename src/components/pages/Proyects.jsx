@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../layouts/Header';
-import { Footer } from '../layouts/footer';
+import { Footer } from '../layouts/Footer';
 import imgProyects from '../../assets/img/img_home8.jpg';
 import imgHoddie from '../../assets/img/hoddieHub.png'
 import './Proyects.css';

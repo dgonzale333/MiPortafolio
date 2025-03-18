@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from '../layouts/Header';
-import { Footer } from '../layouts/footer';
+import { Footer } from '../layouts/Footer.jsx';
 import imgHome from '../../assets/img/img_home8.jpg';
 import imgSection from '../../assets/img/img_home2.jpg';
 import './Home.css';
