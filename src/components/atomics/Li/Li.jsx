@@ -1,7 +1,7 @@
 import React from 'react';
 import './Li.css'
 import logo from '../../../../public/vite.svg'
-import { Link } from 'react-router-dom'; // 📌 Importa Link de React Router
+import { Link } from 'react-router-dom'; //
 
 
 export const Li = () => {
@@ -19,6 +19,7 @@ export const Li = () => {
         <li><Link to="/" className='li-a'>Contacto</Link></li>
       </ul>
       
+         
       </div>
     </>
   );
