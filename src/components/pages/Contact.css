@@ -1,9 +1,78 @@
 
 .img-fullscreenCt {
-    width: 99vw; /* Hace que la imagen se agrande un poco */
+    width: 99vw; 
     height: 100vh;
     object-fit: cover;
     position: absolute;
     z-index: -1;
     filter: blur(5px);
   }
+/* Contenedor principal */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  
+  /* Contenedor de redes sociales */
+  .social-links {
+    background: transparent;
+    border: 2px solid white;
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-links h2 {
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .social-links p {
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Íconos de redes sociales */
+  .icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .social-icon {
+    font-size: 2.5rem;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  /* Colores específicos por red social */
+  .instagram:hover { color: #E1306C; } 
+  .facebook:hover { color: #1877F2; } 
+  .github:hover { color: black; } 
+  .whatsapp:hover { color: #25D366; } 
+  .email:hover { color: #FF6347; } 
+  
+
+  @media (max-width: 768px) {
+    .social-links {
+      width: 90%;
+    }
+  
+    .contact-container {
+      height: auto;
+      padding: 3rem 0;
+      margin-top: 12rem;
+    }
+  }
+  
