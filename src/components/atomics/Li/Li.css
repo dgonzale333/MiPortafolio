@@ -1,10 +1,9 @@
-
-
+/* ----- Estilos generales del header ----- */
 .nav-li {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 5% ;
+    padding: 1rem 5%;
     background: transparent;
     position: fixed;
     width: 100%;
@@ -13,8 +12,7 @@
     z-index: 100;
 }
 
-
-
+/* ----- Logo del header ----- */
 .logo-header {
     display: flex;
     align-items: center;
@@ -23,7 +21,7 @@
 }
 
 .logo-header img {
-    height: 35px; /* Tamaño ajustado del logo */
+    height: 35px;
 }
 
 .logo-header h1 {
@@ -32,6 +30,7 @@
     color: var(--text-color);
 }
 
+/* ----- Menú de navegación ----- */
 .ul-nav {
     display: flex;
     gap: 2rem;
@@ -47,7 +46,7 @@
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease-in-out;
-    font-family: 'Poppins', sans-serif; /* Aplicar la fuente */
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
@@ -74,3 +73,60 @@
     left: 0;
 }
 
+/* ====== Estilos del menú hamburguesa ====== */
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    color: var(--text-color);
+    background: none;
+    border: none;
+}
+
+/* ====== Menú oculto por defecto ====== */
+.ul-nav {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Animación */
+}
+
+/* ====== Estilos para móviles ====== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .ul-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding: 1rem 0;
+
+        /* Ocultar inicialmente con animación */
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+    }
+
+    /* Cuando el menú está activo */
+    .ul-nav.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .li-a {
+        font-size: 1.2rem;
+        display: block;
+        padding: 10px 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+}

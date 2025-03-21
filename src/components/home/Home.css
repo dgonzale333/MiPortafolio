@@ -178,3 +178,27 @@ section p {
 Header.scrolled{
   background-color: white;
 }
+
+/* Pantallas extra pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+  .txt-main {
+      font-size: 2rem;
+  }
+
+  .bt-home1, .bt-home2 {
+      width: 100%;
+  }
+
+  section img {
+      width: 200px;
+      height: 200px;
+  }
+
+  section h2 {
+      font-size: 1.8rem;
+  }
+
+  section p {
+      font-size: 0.8rem;
+  }
+}

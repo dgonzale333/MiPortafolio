@@ -25,7 +25,7 @@ export const Home = () => {
                 <p className='txt-main'>Desarrollador FullStack</p>
                 <div className="bt-home">
                     <button className='bt-home1' onClick={() => scrollToSection('about')}>Mirar Más</button>
-                    <button className='bt-home2'>Mis Proyectos</button>
+                    <button className='bt-home2' >Mis Proyectos</button>
                 </div>
             </main>
 
@@ -34,10 +34,13 @@ export const Home = () => {
                 <div className="info-section1">
                     <h2>Sobre mí</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Fuga repellendus autem quas recusandae labore molestias 
-                        cum corporis aspernatur. Veritatis hic natus, qui vitae 
-                        ullam necessitatibus rem ab laudantium nulla.
+                    Persona versátil y con habilidades para gestionar
+                    múltiples tareas de manera eficiente.Me caracterizo
+                    por mi dinamismo, proactividad y entusiasmo para
+                    aprender y adaptarme a nuevos desfíos. Cuento con
+                    conocimientos en programación de software y
+                    herramientas digitales, con especial interés en el
+                    desarrollo y la innovación tecnológica
                     </p>
                 </div>
             </section>

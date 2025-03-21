@@ -7,23 +7,40 @@
   filter: blur(5px);
 }
 
-.projects-container {
-  padding: 40px 20px;
-  text-align: center;
+main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 h2 {
   font-size: 3rem;
-  margin-top: 12rem;
+  margin-top: 10rem;
   text-align: center;
 }
 
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  flex-direction: row;
+  gap: 4rem;
+  margin-top: 25rem;
   justify-content: center;
 }
 
@@ -32,7 +49,6 @@ h2 {
   border: 1px 1px 1px 1px white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   transition: transform 0.3s ease;
 }
 
@@ -43,6 +59,7 @@ h2 {
 .project-image {
   width: 95%;
   height: 300px;
+  border-radius: 2rem;
   object-fit: cover;
 }
 
