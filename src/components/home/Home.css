@@ -85,11 +85,11 @@ main {
     height: 3rem;
     cursor: pointer;
     border-radius: 17px; /* Bordes redondeados para un look moderno */
-    background-color: black;
+    background-color: transparent;
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    border-color: white ;
+    border: 2px solid white ;
     transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
@@ -103,17 +103,24 @@ main {
     transform: scale(0.95); /* Reduce ligeramente al hacer clic */
 }
 
+.ArrowDown{
+  width: 1.1rem;
+  margin-top: -0.1rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .bt-home2{
     width: 10rem; /* Tamaño ajustado para mejor visibilidad */
     height: 3rem;
    /* Reducido para mejor proporción */
     cursor: pointer;
     border-radius: 17px; /* Bordes redondeados para un look moderno */
-    background-color: #2825f4;
+    background-color: transparent;
     color: white;
     font-size: 1rem;
     font-weight: bold;
-   border: none;
+   border: 2px solid white;
     transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
@@ -179,6 +186,39 @@ Header.scrolled{
   background-color: white;
 }
 
+.h2-skills{
+  font-size: 2.5rem;
+  margin-top: 9rem;
+  text-align: center;
+}
+
+section-skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  gap: 1rem;
+}
+
+.skills img{
+  width: 5rem; /* Ajusta el tamaño de la imagen */
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 35%; /* Hace la imagen circular */
+}
+
+
 /* Pantallas extra pequeñas (móviles pequeños) */
 @media (max-width: 480px) {
   .txt-main {
@@ -189,18 +229,24 @@ Header.scrolled{
       width: 100%;
   }
 
-  section img {
-      width: 200px;
-      height: 200px;
-  }
+  section {
+    flex-direction: column;
+    gap: 2rem;
+}
 
-  section h2 {
-      font-size: 1.8rem;
-  }
+section img {
+    width: 200px;
+    height: 200px;
+}
 
-  section p {
-      font-size: 0.8rem;
-  }
+section h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+section p {
+    font-size: 0.8rem;
+}
 
   @keyframes typing {
     from {
@@ -211,3 +257,274 @@ Header.scrolled{
     }
   }
 }
+
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(to right, var(--primary-bg), var(--secondary-bg));
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-fullscreen {
+    width: 99vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.txt-main {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 4px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid transparent;
+}
+
+.txt-main:first-of-type {
+    color: #ffffff;
+    animation: typing 2s steps(15) forwards, blinkCursor 0.5s;
+}
+
+.txt-main:last-of-type {
+    color: #ffffff;
+    animation: typing 2s steps(25) forwards 2s, blinkCursor 0.5s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 51%;
+    }
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-right-color: #ffffff;
+    }
+}
+
+.bt-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.bt-home1, .bt-home2 {
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 17px;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid white;
+    transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.bt-home1:hover, .bt-home2:hover {
+    transform: scale(1.1);
+}
+
+.bt-home1:active, .bt-home2:active {
+    transform: scale(0.95);
+}
+
+.ArrowDown {
+    width: 1.1rem;
+    margin-top: -0.1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    gap: 10rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-section1 {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+section img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+section h2 {
+    margin-top: -10rem;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.h2-skills {
+    font-size: 2.5rem;
+    margin-top: 9rem;
+    text-align: center;
+}
+
+section-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skills img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 35%;
+}
+
+/* Responsiveness */
+
+/* Pantallas extra pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+    .txt-main {
+        font-size: 2rem;
+    }
+
+    .bt-home1, .bt-home2 {
+        width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    section img {
+        width: 200px;
+        height: 200px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+
+    section p {
+        font-size: 0.8rem;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 820px) and (max-width: 1024px) {
+    .txt-main {
+        font-size: 3rem;
+    }
+
+    section {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    section img {
+        width: 250px;
+        height: 250px;
+        margin-top: -2rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    .section-skills{
+      flex-wrap: wrap;
+    }
+
+    .skills {
+        gap: 2rem;
+    }
+
+    .skills img {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+}
+
