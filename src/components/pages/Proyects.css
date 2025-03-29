@@ -35,7 +35,7 @@ h2 {
   text-align: center;
 }
 
-.projects-grid {
+ .projects-grid {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -133,5 +133,49 @@ h2 {
   h2 {
     font-size: 1.8rem;
    
+  }
+}
+
+
+@media (min-width: 821px) and (max-width: 1024px) {
+  .projects-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -10rem;
+  }
+
+  .project-card {
+    width: 40%; /* Tarjetas de ancho completo */
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .projects-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -10rem;
+  }
+
+  .project-card {
+    width: 40%; /* Tarjetas de ancho completo */
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    
   }
 }

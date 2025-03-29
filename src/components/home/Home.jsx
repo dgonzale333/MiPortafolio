@@ -8,7 +8,7 @@ import imgGit from '../../assets/img/github.png';
 import imgJS from '../../assets/img/js.png';
 import imgJAVA from '../../assets/img/java.png';
 import imgC from '../../assets/img/documento.png';
-import imgMy from '../../assets/img/my2.jpeg'
+import imgMy from '../../assets/img/my.jpeg'
 import './Home.css';
 
 export const Home = () => {
