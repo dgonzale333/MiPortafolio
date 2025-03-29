@@ -8,6 +8,7 @@ import imgGit from '../../assets/img/github.png';
 import imgJS from '../../assets/img/js.png';
 import imgJAVA from '../../assets/img/java.png';
 import imgC from '../../assets/img/documento.png';
+import imgMy from '../../assets/img/my2.jpeg'
 import './Home.css';
 
 export const Home = () => {
@@ -89,7 +90,7 @@ export const Home = () => {
             </main>
 
             <section id="about">
-                <img src={imgSection} alt="Sobre mí" />
+                <img src={imgMy} alt="Sobre mí" />
                 <div className="info-section1">
                     <h2>Sobre mí</h2>
                     <p>
